@@ -9,38 +9,58 @@
 
 </head>
 
+<!-- Dev
+Blog
+Contact 
+About -->
+
 <body>
-	<div class="header ">
-		<a href="/..">
-            <img class="logo" src="/img/karxu_logo.png">
-        </a>
+	<div class="header">
+        <div class="tab">
+            <a class="tab_link" target="_blank" href="http://karenxu.strikingly.com/">About</a>
+        </div>
+        <div class="tab">
+    		<a target="_blank" href="/..">
+                <img class="logo" src="/img/karxu_logo.png">
+            </a>
+        </div>
+        <div class="tab">
+            <a class="tab_link" target="_blank" href="http://karenxu.strikingly.com/">Contact</a>
+        </div>
 	</div>
 
-
+<!-- ANIMATE LOGO in after effects -->
 
 
 	<div class="container gallery ">
 		<div class="row">
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/geo_icon.png">
+					<img data-toggle="modal" data-target="#modal-geo" src="/img/icon/geo_icon.jpg">
 					<div data-toggle="modal" data-target="#modal-geo" class="overlay">
 						<h2>Geometric Landscapes</h2>
+                        <h3>Graphic Design</h3>
 					</div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/fruit_icon.png">
-					<div data-toggle="modal" data-target="#modal-fruit" class="overlay"><h2>Icons</h2></div>
+					<img src="/img/icon/fruit_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-fruit" class="overlay">
+                        <h2>Fruit Icon</h2>
+                        <h3>Graphic Design</h3>
+                    </div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/tt_icon.png">
-					<div data-toggle="modal" data-target="#modal-tt" class="overlay"><h2>Brand Graphics</h2></div>
+					<img src="/img/icon/tt_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-tt" class="overlay">
+                        <h2>Trading Technologies</h2>
+                        <h3>Branding</h3>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -48,22 +68,31 @@
 		<div class="row">
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect"> 
-					<img src="/img/icon/schlep_icon.png">
-					<div data-toggle="modal" data-target="#modal-schlep" class="overlay"><h2>Minimalist Graphics</h2></div>
+					<img src="/img/icon/schlep_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-schlep" class="overlay">
+                        <h2>Schlep</h2>
+                        <h3>Branding | Marketing</h3>
+                    </div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/popup_icon.png">
-					<div data-toggle="modal" data-target="#modal-popup" class="overlay"><h2>Pop Up Shop</h2></div>
+					<img src="/img/icon/popup_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-popup" class="overlay">
+                        <h2>Pop Up Shop</h2>
+                        <h3>Branding</h3>
+                    </div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/wood_icon.png">
-					<div data-toggle="modal" data-target="#modal-wood" class="overlay"><h2>Photoshop</h2></div>
+					<img src="/img/icon/wood_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-wood" class="overlay">
+                        <h2>Wood Grain</h2>
+                        <h3>Graphic Design</h3>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -71,28 +100,36 @@
 		<div class="row">
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/maestro_icon.png">
-					<div data-toggle="modal" data-target="#modal-maestro" class="overlay"><h2>Web Design</h2></div>
+					<img src="/img/icon/flex_icon.png">
+					<div data-toggle="modal" data-target="#modal-flex" class="overlay">
+                        <h2>Flex.io</h2>
+                        <h3>Web Design</h3>
+                    </div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/bite_icon.png">
-					<div data-toggle="modal" data-target="#modal-bite" class="overlay"><h2>Magazine</h2></div>
+					<img src="/img/icon/bite_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-bite" class="overlay">
+                        <h2>Bite | Winter 2016</h2>
+                        <h3>Print</h3>
+                    </div>
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/icon/mask_icon.png">
-					<div data-toggle="modal" data-target="#modal-mask" class="overlay"><h2>Graphite Drawing</h2></div>
+					<img src="/img/icon/mask_icon.jpg">
+					<div data-toggle="modal" data-target="#modal-mask" class="overlay">
+                        <h2>Masked</h2>
+                        <h3>Graphite Drawing</h3>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<!-- look up some image compression code , can use min.css-->
 
 
 
@@ -121,15 +158,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Fruit App Icons</h4>
+                	<h4 class="modal-title">Fruit Icon</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="fruit img-responsive" src="/img/design/fruit1.png">
-                    <img class="fruit img-responsive" src="/img/design/fruit2.png">
-                    <img class="fruit img-responsive" src="/img/design/fruit3.png">
-                    <img class="fruit img-responsive" src="/img/design/fruit4.png">
-                    <img class="fruit img-responsive" src="/img/design/fruit5.png">
-                    <p>Digital artwork series created in Photoshop</p>
+                    <img class="fruit img-responsive" src="/img/design/fruit1.jpg">
+                    <img class="fruit img-responsive" src="/img/design/fruit2.jpg">
+                    <p>Digital artwork series created in Photoshop for a fun artistic app concept</p>
+                    <p>Visit <a target="_blank" href="http://imelon.strikingly.com/">iMelon</a> to check out the prototype</p>
                 </div>
             </div>
         </div>
@@ -140,7 +175,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Branding Design Work</h4>
+                	<h4 class="modal-title">Trading Technologies</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/tt1.png">
@@ -158,11 +193,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Brand Graphics</h4>
+                	<h4 class="modal-title">Schlep</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/schlep.png">
-                    <p>Marketing series done for start-up Schlep targeted at college students during finals week</p>
+                    <p>Marketing series done for start-up Schlep targeted at college students during finals week / moving season</p>
                 </div>
             </div>
         </div>
@@ -173,7 +208,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Marketing Graphics</h4>
+                	<h4 class="modal-title">Pop Up Shop</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/popup1.png">
@@ -189,7 +224,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Photoshopped Wood</h4>
+                	<h4 class="modal-title">Wood Grain</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/wood.png">
@@ -200,17 +235,17 @@
     </div>
 
     <!-- Row 3 -->
-    <div class="modal fade" id="modal-maestro" role="dialog">
+    <div class="modal fade" id="modal-flex" role="dialog">
   		<div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Web Design</h4>
+                	<h4 class="modal-title">Flex.io</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/maestro1.png">
-                    <img class="img-responsive" src="/img/design/maestro2.png">
-                    <p>Web design work done during 2015 Summer Internship at start-up Maestro (rebranded Tovala in 2016)</p>
+                    <a target="_blank" href="http://greenagainmadagascar.org/"><img class="img-responsive" src="/img/design/flex1.jpg"></a>
+                    <p>Web design work done during 2016 Winter/Spring Internship at start-up Flex.io.</p>
+                    <a target="_blank" href="http://greenagainmadagascar.org/">greenagainmadagascar.org</a>
                 </div>
             </div>
         </div>
@@ -221,7 +256,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Magazine</h4>
+                	<h4 class="modal-title">Bite | Winter 2016 Issue</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/bite1.png">
@@ -237,7 +272,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Graphite Drawing</h4>
+                	<h4 class="modal-title">Masked</h4>
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive" src="/img/design/mask.png">
