@@ -5,7 +5,9 @@
 	<title>Karen Xu</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="design.css">
+    <script src="design.js"></script> <!-- importing correctly -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width" />
 
 </head>
 
@@ -14,18 +16,32 @@ Blog
 Contact 
 About -->
 
+<ul class="topnav" id="myTopnav">
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()"><img width="20px" src="/img/menu_icon.png"></a>
+  </li>
+  <li><a class="tab_link" href="http://karenxu.strikingly.com/">About</a></li>
+  <li><a class="tab_link" href="http://karenxu.strikingly.com/">Contact</a></li>
+  <!-- <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li> -->
+</ul>
+
 <body>
 	<div class="header">
+
+
+
         <div class="tab">
-            <a class="tab_link" target="_blank" href="http://karenxu.strikingly.com/">About</a>
+            <a id="about" class="tab_link" href="http://karenxu.strikingly.com/">About</a>
         </div>
         <div class="tab">
-    		<a target="_blank" href="/..">
+    		<a href="/..">
                 <img class="logo" src="/img/karxu_logo.png">
             </a>
         </div>
-        <div class="tab">
-            <a class="tab_link" target="_blank" href="http://karenxu.strikingly.com/">Contact</a>
+        <div id="contact" class="tab">
+            <a class="tab_link" href="http://karenxu.strikingly.com/">Contact</a>
         </div>
 	</div>
 
@@ -286,15 +302,16 @@ About -->
 
 <!-- social media links -->
 
-
+    <div class="footer">
+        <p>© Karen Xu 2016</p>
+    </div>
 
     <!-- Bootstrap JQuery CND -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Bootstrap JS CND -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <p>© Karen Xu 2016</p>
-
+    
+   
 </body>
 </html>

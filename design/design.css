@@ -1,28 +1,93 @@
 	/*glacier color: #1995AD;*/
 	/*ice color: #A1D6E2;*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width:680px) {
 	.gallery_items {
 		display: block;
+		text-align: center;
 	}
+
 	.logo {
 		width:100%;
 		text-align:center;
 		margin:20px 0;
 	}	
-	.magic_about .contact {
-		display: inline;
-		text-align: center;
+	#about, #contact {
+		display: none;
 	}
-	.about {
-		display: hidden;
-	}
-
 }
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: block;
+  }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: block;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: right;
+  }
+
+  ul.topnav.responsive li a:hover {
+  	color: #555;
+  }
+}
+
+/*END OF MEDIA QUERIES*/
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+@media (min-width:681px) {
+	ul.topnav li.icon {display: none}
+	ul.topnav li a{display: none}
+}
+
+
 
 body {
 	font-family: 'Lato', Arial, sans-serif;
 	margin: 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -34,19 +99,22 @@ body {
 .header {
 	padding: 50px 0px 50px 0px;
 	text-align: center;
+	min-width: 447px;
 }
 
-
 .tab {
+	display: inline;
+}
+.tab_link {
 	text-transform: uppercase;
 	font-family: 'Lato', Arial;
 	color: black;
-	display: inline;
+	font-size: 15px;
 }
 
 .tab_link:hover {
 	text-decoration: none;
-	color: red;
+	color: #555;
 }
 
 .tab_link:visited {
@@ -54,8 +122,8 @@ body {
 	color: black; /* this one changes it, but the other colors have no effect */
 }
 
-.magic_about {
-	display: hidden;
+#magic_about {
+	display: none;
 }
 
 .gallery {
@@ -66,6 +134,7 @@ body {
 .gallery_items{
 	/*border: solid 1px black;*/
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .gallery_icon {
@@ -74,6 +143,7 @@ body {
 	height: 300px;
 	cursor: pointer;
     overflow: hidden;
+    float: center;
 }
 
 .gallery_icon img {
@@ -86,6 +156,7 @@ body {
 	overflow: hidden;
 	height: 300px;
 	padding: 0px;
+	/*min-width: 447px;*/
 }
 
 /*.row {
@@ -110,7 +181,6 @@ a {
 a:hover {
 	color: #000;
 }
-
 
 
 /*Hover Effect -----------*/
@@ -187,8 +257,9 @@ transform:translatey(100);
 }
 
 
-p {
+footer {
 	font-family: 'Lato', Arial;
+	min-width: 447px;
 }
 
 /*hover effect ends*/
