@@ -15,10 +15,14 @@
 	#about, #contact {
 		display: none;
 	}
-}
+
+/*	.col-sm-4 {
+		float: center; !important
+		width: 100%; !important
+	}*/
+
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
   ul.topnav li {display: none;}
   ul.topnav li.icon {
     float: right;
@@ -57,10 +61,6 @@ ul.topnav {
     overflow: hidden;
 }
 
-/* Float the list items side by side */
-ul.topnav li {
-	float: left;
-}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -143,7 +143,9 @@ body {
 	height: 300px;
 	cursor: pointer;
     overflow: hidden;
-    float: center;
+    display: inline-block;
+    margin: 0 auto;
+
 }
 
 .gallery_icon img {
@@ -153,9 +155,11 @@ body {
 }
 
 .col-sm-4 {
+	/*border: solid 1px blue;*/
 	overflow: hidden;
 	height: 300px;
-	padding: 0px;
+	padding: 0px; 
+	text-align: center;
 	/*min-width: 447px;*/
 }
 
