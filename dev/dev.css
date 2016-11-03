@@ -1,0 +1,169 @@
+    /*glacier color: #1995AD;*/
+    /*ice color: #A1D6E2;*/
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+h2 {
+    font-family: 'Lato', Arial;
+    font-weight: 300;
+}
+h4 {
+    font-family: 'Lato', Arial;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #A1D6E2;
+    padding-bottom: 20px;
+}
+p {
+    padding: 0; margin: 0;
+    padding-bottom: 10px;
+}
+
+
+a {
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+    color: #A1D6E2;
+}
+
+
+#jumbo {
+    margin: 0; padding: 0;
+    background-image: url("/img/questions.jpg");
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+/*    position:absolute; */
+}
+
+.parallax { 
+    background-image: url("/img/bw_study.jpeg");
+    height: 600px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about {
+    background-image: url("/img/dark_geometric.png");
+    height: 400px;
+}
+
+.about_text {
+    width: 55%;
+    display: inline-block;
+    padding: 40px;
+    color: #A1D6E2;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.about_text p {
+    color: #fff;
+}
+
+.about_img {
+    width: 30%;
+    display: inline-block;
+    padding-top: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.about_img img {
+    width: 300px;
+    padding: 20px;
+    /*border: 1px solid red;*/
+}
+
+
+
+#content {
+    padding: 50px;
+}
+
+#nav {
+    margin: 0; padding: 0;
+    background:#fff;
+    width:25%;
+    top: 1100px;
+/*    position:relative; */ 
+    float: left;
+}
+
+#nav_logo {
+    padding: 50px 0px 50px 0px;
+}
+
+#nav_link ul {
+    list-style-type: none;
+    padding: 0; margin: 0;
+}
+
+#nav_link ul li {
+    padding-bottom: 20px;
+    font-family: 'Lato', Arial;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+#text {
+    margin: 0; padding: 0;
+	float: right;
+/*	position: relative; */
+	background: #fff;
+    width: 70%
+}
+
+.info_section {
+    padding-bottom: 50px;
+}
+
+.img_section {
+    margin: 20px auto 20px auto;
+}
+
+form{
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+
+input {
+    width: 90%;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: none;
+    color: #333;
+    padding-left: 10px;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: none;
+    color: #333;
+    padding-left: 10px;
+}
+
+
+.form_input {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Lato', Arial;
+}

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dev.css">
+    <!-- must put personal style sheet last so that it overwrites the others -->
+</head>
+
+
+<body>
+
+<div id="jumbo" class="parallax">
+
+</div>
+<div id="about" class="about">
+    <div class="about_text">
+        <h2>About Me</h2>
+        <p>
+            I am a student at the University of Chicago with an interest in technology and design. I study both Computer Science and Visual Arts so that I have both the technical background and design vision to create next-level user experiences. I am passionate about bridging the gap between software engineering and product design. Take a look at some of my experiences.
+        </p>
+    </div>
+    <div class="about_img">
+        <img src="/img/dev/headshot.png">
+    </div>
+</div>
+<!-- Content section, Float right -->
+<div id="content">
+    <div id="nav">
+        <div id="nav_logo">
+            <a href="/.."><img width="150px" src="/img/karxu_logo.png"></a>
+        </div>
+      
+        <div id="nav_link">
+            <ul>
+                <li><a href="#about"> About Me</a></li>
+                <li><a href="#tt"> Trading Technologies</a></li>
+                <li><a href="#flex"> Flex.io</a></li>
+                <li><a href="#gt"> gravitytank</a></li>
+                <li><a href="#design"> Design Portfolio</a></li>
+                <li><a href="#contact"> Contact Me</a></li>
+            </ul>
+        </div>
+        <div id="nav_icon">
+            <!-- icons for github, linkedin, angellist -->
+        </div>
+    </div>
+
+
+    <div id="text">
+     
+        <div id="tt" class="info_section">
+            <h2>Trading Technologies</h2>
+            <h4>Design Intern</h4>
+            <p>
+                Developed widgets in JavaScript and JQuery for the user interface basis that the trading software draws from 
+            </p>
+            <p>
+                Designed and developed an internal email template that significantly increased company interaction with project management statistics
+            </p>
+            <p>    
+                Built and integrated WordPress plugins for the website
+            </p>
+            <p>
+                Created graphics and videos with Adobe Creative Cloud for sales and marketing teams
+            </p>
+        </div>
+        <div id="flex" class="info_section">
+            <h2>Flex.io</h2>
+            <h4>Web Developer</h4>
+            <p>
+                Designed and developed a website for a Non-Profit using Illustrator, HTML, and CSS 
+            </p> 
+
+            <a target="_blank" href="http://greenagainmadagascar.org/">www.greenagainmadagascar.org</a>
+        </div>
+        <div id="gt" class="info_section">
+            <h2>gravitytank</h2>
+            <h4>Product Design Project</h4>
+            <p>As a team, mentored by gravitytank, we wanted to solve a human-centered problem. We broke the process down into research, analysis, ideation, design, prototyping, and testing. Because I worked with the complete process of designing a solution, I have a holistic understanding of design thinking. The project strengthened my ability to problem solve, creatively think, and innovate for users.</p>
+            <div class="img_section">
+                <img height="300px" src="/img/dev/gt_work1.jpg">
+                <img height="300px" src="/img/dev/gt_work2.jpg">
+                <img height="300px" src="/img/dev/gt_work4.jpg">
+            </div>
+            <p><b>Research:</b> We started with secondary research on safety technology, UChicago campus safety resources, student incidents, and crime data. From this information, we selected a sample of students and faculty to interview for primary research.</p>
+            <p><b>Analysis:</b> Although we initially wanted to approach the problem through building a technology enabled solution prevented crime from happening, analysis of our research provided two points that changed our approach. First, there were already many measures that exist for preventing crime, yet students are either unaware or uninterested in them and therefore they are not very effective. Second, the lack of reporting campus crimes was a huge barrier to progress and that lack was due to a perception of the negative experience in reporting a crime.</p>
+            <div class="img_section">
+                <img height="250px" src="/img/dev/gt1.png">
+                <img height="250px" src="/img/dev/gt2.png">
+            </div>
+
+            <p><b>Ideation:</b> Through wire-framing, story-boarding, and a lot of post-it-notes, we worked through roughly 20 possible ideas and finalized the idea of a web platform and the theme of a smooth experience to combat the current perception.</p>
+ 
+            <p><b>Design:</b> We designed a web platform that provided a 20 minute reporting experience, a simple and intuitive interface, and a fully transparent process, with the idea that information would create the basis for safety measures to be built upon.</p>
+ 
+            <p><b>Prototyping & Testing:</b> Once we created a physical mock-up of the website, we brought it back to the initial students we interviewed and used their feedback to adjust aspects of the platform.</p>
+
+        </div>
+        <div id="design" class="info_section">
+            <h2>Design Portfolio</h2>
+            <a href="/design"><h4>Check out the rest of portfolio here</h4> </a>
+            <a href="/design"><img width="90%" src="/img/design/geo1.jpg"></a>
+        </div>
+        <div id="contact" class="info_section">
+            <h2>Contact Me</h2>
+            <form class="contactform" method="post" autocomplete="off" method="post" action="mailto:karenxu@uchicago.edu">
+                <div class="form_input"><input type="text" id="name" name="name" value="" placeholder="Name"></div>
+                <div class="form_input"><input type="email" id="email" name="_replyto" value="" placeholder="Email"></div>
+                <div class="form_input"><textarea type='text' id="project" name="message" placeholder="Message"></textarea></div>
+                <div class="form_input"><button type="submit" name="submit" class="button btn btn-lg submit_form">Send</button></div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© Karen Xu 2016</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap JQuery CND -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Bootstrap JS CND -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script src="dev.js"></script>
+
+
+</body>
+</html>
