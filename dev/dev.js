@@ -29,6 +29,18 @@ $("#button_about").click(function() {
     }, 1000);
 });
 
+$("#button_morningstar").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#morningstar").offset().top
+    }, 1000);
+});
+
+$("#button_pickupp").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#pickupp").offset().top
+    }, 1000);
+});
+
 $("#button_tt").click(function() {
     $('html, body').animate({
         scrollTop: $("#tt").offset().top
