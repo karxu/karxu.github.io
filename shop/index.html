@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Karen Xu</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="shop.css">
+    <script src="shop.js"></script> <!-- importing correctly -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width" />
+
+</head>
+
+<!-- Dev
+Blog
+Contact 
+About -->
+
+<ul class="topnav" id="myTopnav">
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()"><img width="20px" src="/img/menu_icon.png"></a>
+  </li>
+  <li><a class="tab_link" href="/dev/#about">About</a></li>
+  <li><a class="tab_link" href="/dev/#contact">Contact</a></li>
+  <!-- <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+  </li> -->
+</ul>
+
+<body>
+	<div class="header">
+        <div class="tab">
+            <a id="about" data-toggle="modal" data-target="#modal-geo" class="tab_link">About</a>
+        </div>
+        <div class="tab">
+    		<a href="/..">
+                <img class="logo" src="/img/karxu_logo.png">
+            </a>
+        </div>
+        <div id="order" class="tab">
+            <a class="tab_link" href="">Order</a>
+        </div>
+	</div>
+
+    <div id="about" class="about">
+        <div class="about_text">
+            <p>
+Welcome to my last college pop-up shop! I've been making a ton of DIY jewelry and home decor items that you can check out at karxu.com/shop. 
+
+Items can be delivered in Chicago and NYC, or picked up at 54th Place and Woodlawn (there's freebies included if you pickup!) Venmo and Cash accepted. 
+
+Feel free to reach out to me at karenxu@uchicago.edu with any questions!            </p>
+        </div>
+    </div>
+
+	<div class="container gallery ">
+		<div class="row">
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block">
+					<img data-toggle="modal" data-target="#modal-geo" src="/img/shop/pop_up_web-1.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block">
+					<img src="/img/shop/pop_up_web-2.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block">
+					<img src="/img/shop/pop_up_web-3.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block"> 
+					<img src="/img/shop/pop_up_web-4.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block hovereffect">
+					<img src="/img/shop/pop_up_web-5.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block hovereffect">
+					<img src="/img/shop/pop_up_web-6.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block hovereffect">
+					<img src="/img/shop/pop_up_web-7.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block hovereffect">
+					<img src="/img/shop/pop_up_web-8.jpg">
+				</div>
+			</div>
+
+			<div class="gallery_items col-sm-4">
+				<div class="gallery_icon center-block hovereffect">
+					<img src="/img/shop/pop_up_web-9.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- Modal Pop Ups for gallery -->
+
+	<!-- Row 1 -->
+	<div class="modal fade" id="modal-geo" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Geometric Landscapes</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/geo1.jpg">
+                    <img class="img-responsive" src="/img/design/geo2.jpg">
+                    <img class="img-responsive" src="/img/design/geo3.jpg">
+                    <p>Digital artwork series created in Photoshop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="modal-fruit" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Fruit Icon</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="fruit img-responsive" src="/img/design/fruit1.jpg">
+                    <img class="fruit img-responsive" src="/img/design/fruit2.jpg">
+                    <p>Digital artwork series created in Photoshop for a fun artistic app concept</p>
+                    <p>Visit <a target="_blank" href="http://imelon.strikingly.com/">iMelon</a> to check out the prototype</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-tt" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Trading Technologies</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/tt1.png">
+                    <img class="img-responsive" src="/img/design/tt2.png">
+                    <img class="img-responsive" src="/img/design/tt3.png">
+                    <p>Design work done during 2016 Summer Internship at Trading Technologies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2 ------------>
+    <div class="modal fade" id="modal-schlep" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Schlep</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/schlep.png">
+                    <p>Marketing series done for start-up Schlep targeted at college students during finals week / moving season</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-popup" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Pop Up Shop</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/popup1.png">
+                    <img class="img-responsive" src="/img/design/popup2.jpg">
+                    <p>Personal design project to promote an art pop-up shop I created Spring 2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-pickupp" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Pickupp</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/pickupp1.jpg">
+                    <p>Interface design for a mobile app</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="modal fade" id="modal-flex" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Flex.io</h4>
+                </div>
+                <div class="modal-body">
+                    <a target="_blank" href="http://greenagainmadagascar.org/"><img class="img-responsive" src="/img/design/flex1.jpg"></a>
+                    <p>Web design work done during 2016 Winter/Spring Internship at start-up Flex.io.</p>
+                    <a target="_blank" href="http://greenagainmadagascar.org/">greenagainmadagascar.org</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="modal fade" id="modal-bite" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Bite | Winter 2016 Issue</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/bite1.png">
+                    <img class="img-responsive" src="/img/design/bite2.png">
+                    <p>Layout and minimal graphic design done for University of Chicago's culinary maganzine</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="modal fade" id="modal-mask" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                	<h4 class="modal-title">Masked</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/design/mask.jpg">
+                    <p>Photorealistic drawing done with graphite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- END OF MODALS -->
+
+<!-- social media links -->
+
+    <div class="footer">
+        <p>&copy Karen Xu 2018</p>
+    </div>
+
+    <!-- Bootstrap JQuery CND -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Bootstrap JS CND -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+   
+</body>
+</html>

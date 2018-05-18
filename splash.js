@@ -6,21 +6,27 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('#dev')
+    $('#shop')
         .animate({opacity: 0,}, 0)
         .delay(200)
         .animate({opacity: 1}, 2500);
 });
 $(document).ready(function() {
-    $('#design')
+    $('#dev')
         .animate({opacity: 0,}, 0)
         .delay(800)
         .animate({opacity: 1}, 2500);
 });
 $(document).ready(function() {
+    $('#design')
+        .animate({opacity: 0,}, 0)
+        .delay(1200)
+        .animate({opacity: 1}, 2500);
+});
+$(document).ready(function() {
     $('#blog')
         .animate({opacity: 0}, 0)
-        .delay(1200)
+        .delay(1600)
         .animate({opacity: 1}, 2500);
 });
 
