@@ -98,16 +98,16 @@ body {
 	margin: 0px 150px 0px 150px;
 }
 
-.header {
+/*.header {
 	text-align: center;
 	min-width: 447px;
 }
 
 .header img {
   max-width: 400px;
-}
+}*/
 
-#jumbo {
+.jumbotron {
     margin: 0; padding: 0;
     background-image: url("/img/shop/artboard-50.jpg");
     overflow: hidden;
