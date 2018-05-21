@@ -193,6 +193,7 @@ body {
 	text-transform: uppercase;
 }
 
+
 .modal-body img {
 	padding-bottom: 20px;
   max-height: 400px;
@@ -211,10 +212,6 @@ a:hover {
 .about_section {
     background-color: #ffe4e1;
     height: 400px;
-}
-
-.about_text {
-    width: 55%;
     display: inline-block;
     padding: 40px;
     color: #A1D6E2;
@@ -222,8 +219,8 @@ a:hover {
     text-align: left;
 }
 
-.about_text p {
-    color: #fff;
+.about_section img {
+    width: 100%;
 }
 
 /*Hover Effect -----------*/
