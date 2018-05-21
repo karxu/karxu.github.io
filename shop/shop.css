@@ -178,6 +178,9 @@ body {
 .gallery h3 {
   padding-top: 20px;
   padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Lato', Arial, sans-serif;
 }
 
 .col-sm-4 {
@@ -301,8 +304,13 @@ filter:alpha(opacity=100);
 transform:translatey(100);
 }
 
-
+#order_button {
+  background-color: #ffe4e1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 footer {
+  padding-top: 100px;
 	font-family: 'Lato', Arial;
 	min-width: 447px;
 }
