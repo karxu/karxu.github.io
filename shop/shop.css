@@ -175,6 +175,11 @@ body {
     max-width: 400px;
 }
 
+.gallery h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .col-sm-4 {
 	/*border: solid 1px blue;*/
 	overflow: hidden;
@@ -209,7 +214,7 @@ a:hover {
 	color: #000;
 }
 
-.about_section {
+/*.about_section {
     background-color: #ffe4e1;
     height: 400px;
     display: inline-block;
@@ -222,7 +227,7 @@ a:hover {
 .about_section img {
     width: 100%;
 }
-
+*/
 /*Hover Effect -----------*/
 
 .hovereffect {
