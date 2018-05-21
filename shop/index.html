@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- https://goo.gl/forms/1EQWhlLxHDPLKBnt1 -->
+
 <head>
 	<title>Karen Xu</title>
 	<meta charset="utf-8">
@@ -9,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width" />
-
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
 </head>
 
 <!-- Dev
@@ -22,36 +24,33 @@ About -->
     <a href="javascript:void(0);" onclick="myFunction()"><img width="20px" src="/img/menu_icon.png"></a>
   </li>
   <li><a class="tab_link" href="/dev/#about">About</a></li>
-  <li><a class="tab_link" href="/dev/#contact">Contact</a></li>
+  <li><a class="tab_link" target="_blank" href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1">Order</a></li>
   <!-- <li class="icon">
     <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
   </li> -->
 </ul>
 
 <body>
+    <div id="jumbo" class="parallax"></div>
 	<div class="header">
-        <div class="tab">
-            <a id="about" data-toggle="modal" data-target="#modal-geo" class="tab_link">About</a>
-        </div>
-        <div class="tab">
+        
+     <!--    <div class="tab">
     		<a href="/..">
                 <img class="logo" src="/img/karxu_logo.png">
+                <img src="/img/shop/artboard-50.jpg">
             </a>
+        </div> -->
+        <div class="tab">
+            <a id="about" data-toggle="modal" data-target="#modal-about" class="tab_link">About</a>
         </div>
+     
         <div id="order" class="tab">
-            <a class="tab_link" href="">Order</a>
+            <a class="tab_link" target="_blank" href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1">Order</a>
         </div>
 	</div>
 
-    <div id="about" class="about">
-        <div class="about_text">
-            <p>
-Welcome to my last college pop-up shop! I've been making a ton of DIY jewelry and home decor items that you can check out at karxu.com/shop. 
-
-Items can be delivered in Chicago and NYC, or picked up at 54th Place and Woodlawn (there's freebies included if you pickup!) Venmo and Cash accepted. 
-
-Feel free to reach out to me at karenxu@uchicago.edu with any questions!            </p>
-        </div>
+    <div class="header">
+        <h3>JEWELRY</h3>
     </div>
 
 	<div class="container gallery ">
@@ -64,13 +63,13 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block">
-					<img src="/img/shop/pop_up_web-2.jpg">
+					<img data-toggle="modal" data-target="#modal-fruit" src="/img/shop/pop_up_web-2.jpg">
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block">
-					<img src="/img/shop/pop_up_web-3.jpg">
+					<img data-toggle="modal" data-target="#modal-tt" src="/img/shop/pop_up_web-3.jpg">
 				</div>
 			</div>
 		</div>
@@ -78,19 +77,19 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
 		<div class="row">
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block"> 
-					<img src="/img/shop/pop_up_web-4.jpg">
+					<img data-toggle="modal" data-target="#modal-schlep" src="/img/shop/pop_up_web-4.jpg">
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/shop/pop_up_web-5.jpg">
+					<img data-toggle="modal" data-target="#modal-popup" src="/img/shop/pop_up_web-5.jpg">
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/shop/pop_up_web-6.jpg">
+					<img data-toggle="modal" data-target="#modal-pickupp" src="/img/shop/pop_up_web-6.jpg">
 				</div>
 			</div>
 		</div>
@@ -98,42 +97,85 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
 		<div class="row">
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/shop/pop_up_web-7.jpg">
+					<img data-toggle="modal" data-target="#modal-flex" src="/img/shop/pop_up_web-7.jpg">
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/shop/pop_up_web-8.jpg">
+					<img data-toggle="modal" data-target="#modal-bite" src="/img/shop/pop_up_web-8.jpg">
 				</div>
 			</div>
 
 			<div class="gallery_items col-sm-4">
 				<div class="gallery_icon center-block hovereffect">
-					<img src="/img/shop/pop_up_web-9.jpg">
+					<img data-toggle="modal" data-target="#modal-mask" src="/img/shop/pop_up_web-9.jpg">
 				</div>
 			</div>
 		</div>
 	</div>
 
+    <div class="header">
+        <h3>HOME DECOR</h3>
+    </div>
 
+    <div class="container gallery ">
+        <div class="row">
+            <div class="gallery_items col-sm-4">
+                <div class="gallery_icon center-block">
+                    <img data-toggle="modal" data-target="#modal-hex" src="/img/shop/pop_up_home_decor-5.jpg">
+                </div>
+            </div>
+
+            <div class="gallery_items col-sm-4">
+                <div class="gallery_icon center-block">
+                    <img data-toggle="modal" data-target="#modal-tri" src="/img/shop/pop_up_home_decor-3.jpg">
+                </div>
+            </div>
+
+            <div class="gallery_items col-sm-4">
+                <div class="gallery_icon center-block">
+                    <img data-toggle="modal" data-target="#modal-ladder" src="/img/shop/pop_up_home_decor-1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 <!-- Modal Pop Ups for gallery -->
 
-	<!-- Row 1 -->
-	<div class="modal fade" id="modal-geo" role="dialog">
-  		<div class="modal-dialog" role="document">
+	
+	<div class="modal fade" id="modal-about" role="dialog">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Geometric Landscapes</h4>
+                    <h4 class="modal-title">About KARXU</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/geo1.jpg">
-                    <img class="img-responsive" src="/img/design/geo2.jpg">
-                    <img class="img-responsive" src="/img/design/geo3.jpg">
-                    <p>Digital artwork series created in Photoshop</p>
+                    <div id="about_section" class="about_section">
+                        <img src="/img/shop/quad_friends-6.jpg">
+                        <div class="about_text">
+                            <p class="about_text">Welcome to my last college pop-up shop! I've been making a ton of DIY jewelry and home decor items that you can check out at karxu.com/shop. </p>
+                            <p class="about_text">Items can be delivered in Chicago and NYC, or picked up at 54th Place and Woodlawn (there's freebies included if you pickup!) Venmo and Cash accepted. </p>
+                            <p class="about_text">Feel free to reach out to me at karenxu@uchicago.edu with any questions! </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Row 1 -->
+    
+    <div class="modal fade" id="modal-geo" role="dialog">
+  		<div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/shop/pop_up_web-1.jpg">
+                    <p>Sterling Silver Plated - Cross Ring - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
@@ -142,15 +184,11 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
 	<div class="modal fade" id="modal-fruit" role="dialog">
   		<div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Fruit Icon</h4>
-                </div>
+
                 <div class="modal-body">
-                    <img class="fruit img-responsive" src="/img/design/fruit1.jpg">
-                    <img class="fruit img-responsive" src="/img/design/fruit2.jpg">
-                    <p>Digital artwork series created in Photoshop for a fun artistic app concept</p>
-                    <p>Visit <a target="_blank" href="http://imelon.strikingly.com/">iMelon</a> to check out the prototype</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-2.jpg">
+                    <p>Sterling Silver Plated - Double Band Ring - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
@@ -164,16 +202,15 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Trading Technologies</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/tt1.png">
-                    <img class="img-responsive" src="/img/design/tt2.png">
-                    <img class="img-responsive" src="/img/design/tt3.png">
-                    <p>Design work done during 2016 Summer Internship at Trading Technologies</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-3.jpg">
+                    <p>Sterling Silver Plated - Chevron Ring - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Row 2 ------------>
+    <!-- Row 2 -->
     <div class="modal fade" id="modal-schlep" role="dialog">
   		<div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -182,8 +219,9 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Schlep</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/schlep.png">
-                    <p>Marketing series done for start-up Schlep targeted at college students during finals week / moving season</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-4.jpg">
+                    <p>Hand Painted Earring Studs - Hexagon (Gold) - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
@@ -197,9 +235,9 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Pop Up Shop</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/popup1.png">
-                    <img class="img-responsive" src="/img/design/popup2.jpg">
-                    <p>Personal design project to promote an art pop-up shop I created Spring 2016</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-5.jpg">
+                    <p>Hand Painted Earring Studs - Circle (Gold) - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
@@ -213,8 +251,9 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Pickupp</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/pickupp1.jpg">
-                    <p>Interface design for a mobile app</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-6.jpg">
+                    <p>Hand Painted Earring Studs - Square (Rose Gold) - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
@@ -229,15 +268,15 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Flex.io</h4>
                 </div>
                 <div class="modal-body">
-                    <a target="_blank" href="http://greenagainmadagascar.org/"><img class="img-responsive" src="/img/design/flex1.jpg"></a>
-                    <p>Web design work done during 2016 Winter/Spring Internship at start-up Flex.io.</p>
-                    <a target="_blank" href="http://greenagainmadagascar.org/">greenagainmadagascar.org</a>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-7.jpg">
+                    <p>Hand Painted Earring Studs - Triangle (Rose Gold) - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
     </div>
 
-      <div class="modal fade" id="modal-bite" role="dialog">
+    <div class="modal fade" id="modal-bite" role="dialog">
   		<div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -245,28 +284,66 @@ Feel free to reach out to me at karenxu@uchicago.edu with any questions!        
                 	<h4 class="modal-title">Bite | Winter 2016 Issue</h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/bite1.png">
-                    <img class="img-responsive" src="/img/design/bite2.png">
-                    <p>Layout and minimal graphic design done for University of Chicago's culinary maganzine</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-8.jpg">
+                    <p>Hand Painted Earring Studs - Square (Marble) - $10</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
     </div>
 
-      <div class="modal fade" id="modal-mask" role="dialog">
+    <div class="modal fade" id="modal-mask" role="dialog">
   		<div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                	<h4 class="modal-title">Masked</h4>
-                </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="/img/design/mask.jpg">
-                    <p>Photorealistic drawing done with graphite</p>
+                    <img class="img-responsive" src="/img/shop/pop_up_web-9.jpg">
+                    <p>Hand Painted Earring Studs - Ear Jacket (White) - $15</p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Row 4 -->
+    <div class="modal fade" id="modal-hex" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+ 
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/shop/pop_up_home_decor-5.jpg">
+                    <p></p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-tri" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+          
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/shop/pop_up_home_decor-3.jpg">
+                    <p></p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-ladder" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+        
+                <div class="modal-body">
+                    <img class="img-responsive" src="/img/shop/pop_up_home_decor-1.jpg">
+                    <p></p>
+                    <a href="https://goo.gl/forms/1EQWhlLxHDPLKBnt1" target="_blank">ORDER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <!-- END OF MODALS -->
 
