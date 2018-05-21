@@ -229,8 +229,11 @@ a:hover {
 
 .about_section img {
     width: 100%;
+}*/
+
+#about_photo {
+  max-height: 400px;
 }
-*/
 /*Hover Effect -----------*/
 
 .hovereffect {
