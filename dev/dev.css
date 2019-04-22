@@ -43,7 +43,7 @@ a:hover {
 }
 
 .parallax { 
-    background-image: url("/img/bw_study.jpeg");
+    background-image: url("/img/questions.jpg");
     height: 600px; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
